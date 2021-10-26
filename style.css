@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    min-height: 60vh;
+    width: 24rem;
+    border-radius: 16px;
+    padding: 2rem 3rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .2), 0 0 50px rgba(0, 0, 0, .2);
+    transform-style: preserve-3d;
+    transition: all .6s ease-out;
+}
+
+.burger {
+    min-height: 32vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+
+.burger img {
+    width: 20rem;
+    z-index: 2;
+    transform-style: preserve-3d;
+    transition: all .6s ease-out;
+}
+
+.animBurger {
+    transform: translateZ(100px) rotateZ(-10deg);
+    -moz-transform: translateZ(80px) rotateZ(-10deg);
+}
+
+.circle {
+    width: 14rem;
+    height: 14rem;
+    background: linear-gradient(to right, rgba(250, 88, 69, .75), rgba(244, 213, 64, .75));
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info {
+    transform-style: preserve-3d;
+}
+
+.info h1 {
+    font-size: 1.8rem;
+    padding: 1rem 0 0;
+    transform-style: preserve-3d;
+    transition: all .6s ease-out;
+}
+
+.animTitle {
+    transform: translateZ(80px);
+    -moz-transform: translateZ(100px);
+}
+
+.info h3 {
+    font-size: 1rem;
+    padding: 1rem 0rem 2rem;
+    color: #585858;
+    font-weight: 400;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    transition: all .6s ease-out;
+}
+
+.animSubTitle {
+    transform: translateZ(60px);
+    -moz-transform: translateZ(80px);
+}
+
+.flavors {
+    display: flex;
+    justify-content: space-between;
+    transform-style: preserve-3d;
+    transition: all .6s ease-out;
+}
+
+.flavors button {
+    padding: .5rem 1.4rem;
+    background: none;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 30px;
+    color: #585858;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button.active {
+    background: #585858;
+    color: #fff;
+}
+
+.flavors button:hover{
+    background-color: #585858;
+    color: #fff;
+}
+
+.flavors:hover > * {
+    background-color: #fff;
+    color: #585858;
+}
+
+.animFlavors {
+    transform: translateZ(50px);
+    -moz-transform: translateZ(60px);
+}
+
+.purchase {
+    margin-top: 5rem;
+    transform-style: preserve-3d;
+    transition: all .6s ease-out;
+}
+
+.purchase button {
+    width: 100%;
+    padding: 1rem 0;
+    background: #f1664e;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    font-size: 1rem;
+    transition: .2s;
+}
+
+.purchase button:hover{
+    background-color: #f05a3f;
+}
+
+.animPurchase {
+    transform: translateZ(40px);
+    -moz-transform: translateZ(30px);
+}
