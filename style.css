@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -65,6 +65,7 @@ body {
 
 .info h1 {
     font-size: 1.8rem;
+    color: #222;
     padding: 1rem 0 0;
     transform-style: preserve-3d;
     transition: all .6s ease-out;
@@ -142,8 +143,7 @@ button.active {
     color: #fff;
     cursor: pointer;
     border-radius: 30px;
-    font-weight: bolder;
-    font-size: 1rem;
+    font-size: 1.3rem;
     transition: .2s;
 }
 
